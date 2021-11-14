@@ -1,26 +1,149 @@
+:root{
+    --heading: rgb(162, 66, 226);
+    --font-family-heading: Verdana, Geneva, Tahoma, sans-serif;
+}
 *{
     box-sizing: border-box;
 }
 body{
     padding: 0;
     margin: 0;
+    font-family:  monospace;
+    background-color: #1e1a2d;
 }
 
 ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 a{
     text-decoration: none;
 }
+
+.trans-btn{
+    padding: 0.4em 1em;
+    border: 3px solid currentColor;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    transform: translate(0,-5px);
+    cursor: pointer;
+}
+
+.mega-txt{
+    font-size: 4.5rem;
+    color: rgb(162, 66, 226);
+
+}
+
 /* Top Nav Bar */
 .top-nav{
+    color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    padding: 20px;
+    
 }
 
 
 
 .nav-items{
     display: flex;
+    justify-content: space-around;
+    /* background-color: teal; */
+    flex: 1;
+    max-width: 1000px;
+   
+}
+.nav-items .nav-item{
+    color: gray;
+}
+
+
+.showcase{
+    background: url('site-bg-2.png') , url('site-bg-1.png'), url('site-bg-3.png'); 
+    background-position: 98%, 86%, 110% 70px;
+    background-repeat: no-repeat;
+    background-size: 250px, 380px, 600px;
+    height: 100vh;
+}
+
+.main-showcase-txt{
+    color: #fff;
+    text-align: center;
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2.5rem;
+}
+
+
+footer{
+    background-color: rgba(0, 0, 0, 0.253);
+    padding: 80px 40px;
+    width: 100%;
+    color: gray;
+    display: flex;
     justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+footer p{
+    margin: 0;
+    padding: 0;
+}
+footer .email{
+    color: rgb(73, 111, 216);
+    font-size: 1.2rem;
+    margin: 10px 0 0 10px;
+    cursor: pointer;
+}
+
+
+/* Portfolio */
+.port-container p{
+    font-family: var(--font-family-heading);
+    margin-left: 40px;
+}
+.port{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    padding: 50px;
+    
+}
+.port img{
+    width: 100%;
+    transition: 0.2s linear;
+}
+.port img:hover{
+    transform: scale(1.05);
+    
+}
+
+
+/* Companies */
+.company-container p{
+    font-size: 2rem;
+    margin-left: 30px;
+    color: var(--heading);
+    font-family: var(--font-family-heading);
+}
+.companies{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    padding: 40px ;
+    width: 90%;
+    margin: auto;
+}
+
+.companies img{
+    width: 100%;
+}
+
+/* Hire action box */
+
+.hire-action-container{
+    
 }
